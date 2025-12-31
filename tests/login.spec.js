@@ -9,7 +9,7 @@ test('Login to Sauce Demo', async ({ page }) => {
   await page.fill('#password', 'secret_sauce');
 
   // Click login
-  await page.click('#login-button');
+  await page.click('login-button');
 
   // Validate login successful
   await expect(page.locator('.title')).toHaveText('Products');
